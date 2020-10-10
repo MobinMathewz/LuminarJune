@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Calculation</h1>
+
+<form action="{%url 'solve'%}" method="post">
+    {%csrf_token%}
+    <div>
+        number1: <input type="text" name="num1">
+        number2: <input type="text" name="num2">
+        <input type="submit" value="calculate">
+
+        {{add}}
+        {{sub}}
+
+    </div>
+</form>
+</body>
+</html>

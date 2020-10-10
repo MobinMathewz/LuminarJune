@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Factorial</h1>
+<form action="{%url 'factorial'%}" method="post">
+    {%csrf_token%}
+    number:<input type="text" name="num1">
+    <input type="submit" value="find">
+
+{{fact}}
+
+</form>
+</body>
+</html>

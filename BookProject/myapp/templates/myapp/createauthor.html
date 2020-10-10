@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Create Author</h1>
+
+<form method="post">
+{% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="create">
+</form>
+{% for author in authors %}
+<hr>
+<h5>{{author.author_name}}</h5>
+<hr>
+{% endfor %}
+</body>
+</html>
